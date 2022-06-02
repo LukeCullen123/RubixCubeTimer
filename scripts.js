@@ -32,7 +32,7 @@ function stopwatch() {
         sec = parseInt(sec);
         min = parseInt(min);
 
-        mis = mis + 100;
+        mis = mis + 10;
 
         if (mis == 1000) {
             sec = sec +1;
@@ -55,7 +55,7 @@ function stopwatch() {
             min = "0" + min;
         }
         timer.innerHTML= min + ":" + sec + ":" + mis;
-        setTimeout("stopwatch()",100);
+        setTimeout("stopwatch()",10);
     }
 }
 document.body.onkeyup = function(e) {
