@@ -23,7 +23,7 @@ function reset(){
     min = 0;
     sec = 0;
     mis = 0;
-    timer.innerHTML= "00:00:000";
+    timer.innerHTML= "00:00:00";
 }
 
 function stopwatch() {
@@ -41,9 +41,7 @@ function stopwatch() {
         if (sec == 60){
             sec = 0;
             min = min + 1;
-        }
-        if (mis < 10 || mis == 0){
-            mis = "00" + mis;
+        
         }
         if (mis < 100 || mis == 0){
             mis = "0" + mis;
