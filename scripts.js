@@ -85,7 +85,7 @@ function ScambleGen(){
         if (move.slice(0,1) != last) {
             Scam = Scam +" "+move;
             last=move.slice(0,1);
-        } else if (move.slice(0,1) = last){
+        } else if (move.slice(0,1) == last){
             i--;
         }
         
