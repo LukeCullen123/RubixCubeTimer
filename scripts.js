@@ -55,7 +55,7 @@ function stopwatch() {
             min = "0" + min;
         }
         timer.innerHTML= min + ":" + sec + ":" + mis;
-        setTimeout("stopwatch()",1);
+        setTimeout("stopwatch()",100);
     }
 }
 document.body.onkeyup = function(e) {
