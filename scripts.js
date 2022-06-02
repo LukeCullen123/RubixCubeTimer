@@ -32,7 +32,7 @@ function stopwatch() {
         sec = parseInt(sec);
         min = parseInt(min);
 
-        mis = mis + 1;
+        mis = mis + 100;
 
         if (mis == 1000) {
             sec = sec +1;
