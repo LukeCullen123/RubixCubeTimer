@@ -78,9 +78,15 @@ document.body.onkeyup = function(e) {
 
 function ScambleGen(){
     Scam = ""; 
+    last = "";
     len = Math.floor(Math.random() * (20 - 15)) + 15;
     for (let i = 0; i <= len;i++){
-        Scam = Scam +" "+turns[Math.floor(Math.random()*turns.length)];
+        move = turns[Math.floor(Math.random()*turns.length)];
+        if (move.slice(0,1) != last) {
+            Scam = Scam +" "+move;
+            last=move.slice(0,1);
+        }
+        
     }
     scramble.innerHTML = Scam;
 }
