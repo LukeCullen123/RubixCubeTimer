@@ -43,7 +43,7 @@ function stopwatch() {
             min = min + 1;
         
         }
-        if (mis < 100 || mis == 0){
+        if (mis < 1000 || mis == 0){
             mis = "0" + mis;
         }
         if (sec < 10 || sec == 0){
